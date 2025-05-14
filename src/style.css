@@ -1,0 +1,271 @@
+:root {
+  --color-primary: rgb(238, 81, 160);
+  --color-secondary: rgb(124, 21, 149);
+  --main-bg: #ffffff;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scroll-offset-large {
+  scroll-margin-top: 9rem;
+}
+.scroll-offset {
+  scroll-margin-top: 6rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+.main-title {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+nav.menu {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  background-color: var(--main-bg);
+}
+
+
+#presentation {
+  scroll-margin-top: 9rem;
+}
+
+#code {
+  scroll-margin-top: 10rem;
+}
+
+#origami {
+  scroll-margin-top: 10rem;
+}
+
+#illustration {
+  scroll-margin-top: 10rem;
+}
+#contact {
+  scroll-margin-top: 10rem;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f2fb;
+  color: var(--color-primary);
+}
+
+#app {
+  margin: 0 auto;
+  padding: 2rem 0rem;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 4.3rem;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+.presentation {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding-top: 5rem;
+  gap: 1rem;
+}
+
+.presentation-photo {
+  grid-column: 2;
+  width: 15rem;
+  border-radius: 50%;
+  padding-right: 4rem;
+}
+
+.presentation-texte {
+  grid-column: 3;
+  max-width: 30rem;
+  text-align: justify;
+  color: var(--color-secondary);
+}
+
+.cv-container {
+  grid-column: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 4rem;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 0.8rem 0.8rem;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 2rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cv-button:hover {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  nav.menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--main-bg);
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  nav.menu.active {
+    display: flex;
+  }
+  .presentation-photo {
+    width: 10rem;
+    padding: 0rem;
+  }
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .presentation-texte {
+    max-width: 90%;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header-content {
+    gap: 2rem;
+  }
+  .cv-container {
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-title {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .projet-card {
+    width: 95%;
+    margin: 1rem auto;
+    height: auto;
+  }
+
+  .presentation-photo {
+    width: 6rem;
+  }
+
+  .presentation-texte {
+    max-width: 15rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: #eeeeee;
+  }
+
+  .header,
+  nav.menu {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+
+  .main-title {
+    color: #ffb6c1;
+  }
+
+  .presentation-texte {
+    color: #eeeeee;
+  }
+
+  .cv-button {
+    background-color: var(--color-primary);
+    color: white;
+  }
+
+  .cv-button:hover {
+    background-color: var(--color-secondary);
+    color: #eeeeee;
+  }
+
+  a {
+    color: #ffb6c1;
+  }
+
+  a:hover {
+    color: var(--color-primary);
+  }
+}
