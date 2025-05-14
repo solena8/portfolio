@@ -2,7 +2,7 @@
   <div id="app">
     <div class="header">
       <div class="header-content">
-        <p class="main-title">Soléna Toussaint</p>
+        <p class="main-title">Soléna Toussaint Hello</p>
         <button class="hamburger" aria-label="Menu" @click="toggleMenu">☰</button>
       </div>
       <nav class="menu" :class="{ 'active': isMenuActive }">
