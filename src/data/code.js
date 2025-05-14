@@ -5,7 +5,7 @@ const codeProjets = [
   new Projet(
     "Carte des voyages",
     [
-      "Projet personnel",
+      "Projet personnel - déploiement en cours",
       "Visualisation des lieux de voyages sur une carte",
       "Connexion à 2 API, création de BDD",
       "Python, SQL Alchemy, Fast API, JavaScript, Leaflet, PositionStack",
