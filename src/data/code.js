@@ -5,8 +5,8 @@ const codeProjets = [
     new Projet(
         "Shoodies",
         [
-            "Site de gestion de goodies pour l'ESN Shodo Nantes",
-            "Architecture Hexagonale, TDD, Clean Code, Gestion de l'authentification et sécurisation",
+            "Site de gestion de goodies pour l'ESN Shodo",
+            "Architecture Hexagonale, TDD, Clean Code",
             "CI/CD Github, Dockerrisation, Déploiement sur GCP",
             "Java, Spring, VueJS, PostgreSQL, Tailwind, JPA/Hibernate, Lombok",
         ],
