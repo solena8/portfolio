@@ -2,6 +2,18 @@
 import Projet from "../models/Projet";
 
 const codeProjets = [
+    new Projet(
+        "Shoodies",
+        [
+            "Site de gestion de goodies pour l'ESN Shodo Nantes",
+            "Architecture Hexagonale, TDD, Clean Code, Gestion de l'authentification et sécurisation",
+            "CI/CD Github, Dockerrisation, Déploiement sur GCP",
+            "Java, Spring, VueJS, PostgreSQL, Tailwind, JPA/Hibernate, Lombok",
+        ],
+        "shoodies.png",
+        "une page internet montrant un catalogue de produits dérivés d'une entreprise",
+        ""
+    ),
   new Projet(
     "Carte des voyages",
     [

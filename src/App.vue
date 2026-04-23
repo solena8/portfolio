@@ -3,10 +3,12 @@
     <div class="header">
       <div class="header-content">
         <p class="main-title">Soléna Toussaint</p>
-        <button class="hamburger" aria-label="Menu" @click="toggleMenu">☰</button>
+        <button class="hamburger" aria-label="Menu" @click="toggleMenu">
+          ☰
+        </button>
       </div>
-      <nav class="menu" :class="{ 'active': isMenuActive }">
-        <a href="#presentation" @click="closeMenu" >Présentation</a>
+      <nav class="menu" :class="{ active: isMenuActive }">
+        <a href="#presentation" @click="closeMenu">Présentation</a>
         <a href="#code" @click="closeMenu">Code</a>
         <a href="#origami" @click="closeMenu">Origami</a>
         <a href="#illustration" @click="closeMenu">Illustration</a>
@@ -23,21 +25,23 @@
         />
         <div class="presentation-texte">
           <p>
-            Formée chez Ada Tech School, j’ai acquis de solides bases en
-            développement grâce à des projets concrets. Je me spécialise en
-            Python, SQL et API, avec une passion pour la donnée, les tests, la
+            Formée chez Ada Tech School, puis à l'ENI École Informatique, j’ai acquis de solides bases en
+            développement et en méthodologie grâce à des projets concrets.
+            Je me spécialise en Java, Python, SQL, avec une passion pour le software craftsmanship,
+            l'architecture logicielle, les tests, le travail avec la donnée, la
             résolution de problèmes complexes et le travail collaboratif.
           </p>
           <p>
-            Actuellement en recherche de stage ou d’alternance, je poursuis ma
-            montée en compétences avec des projets personnels.
+            J'ai obtenu le titre de Conceptrice Développeuse d'Applications RNCP 6 (Bac +4) en avril 2026.
+            Je suis actuellement en recherche d’un contrat d'apprentissage de 2 ans pour poursuivre
+            mes études dans la formation bac +5 Experte en Architecture et Développement Logiciel.
           </p>
           <p>
             Hors code, je crée des BD, plie des origamis géométriques, bricole,
             fais de l’escalade ou joue à des jeux de logique.
           </p>
           <p>
-            Toujours partante pour échanger et apprendre, n’hésitez pas à me
+            Je suis toujours partante pour échanger et apprendre, n’hésitez pas à me
             contacter !
           </p>
         </div>
@@ -95,9 +99,9 @@
     </main>
     <section id="contact">
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScsWwf6E9lwb0iiIImeS2kTPlYQlngr-RDrvoqEU7yOiw19Lw/viewform?embedded=true"
-        width="80%"
-        height="1100"
+        src="https://docs.google.com/forms/d/e/1FAIpQLScxvM7XkcEI3wqPsXDroe9nCZ5cmyDEp0FScrXv4budeeSU2Q/viewform?embedded=true"
+        width="640"
+        height="956"
         frameborder="0"
         marginheight="0"
         marginwidth="0"
@@ -125,7 +129,7 @@ const toggleMenu = () => {
 };
 
 const closeMenu = () => {
-      isMenuActive.value = false; 
+      isMenuActive.value = false;
     };
 
     return {
